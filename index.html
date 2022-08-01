@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<link rel="stylesheet" type="text/css" href="Frontend/nav.css">
+<link rel="stylesheet" type="text/css" href="Frontend/index.css">
+<link rel="stylesheet" type="text/css" href="Frontend/Popup.css">
+<html>
+    <div id="nav-placeholder"></div>
+    <div id="SideM-placeholder"></div>
+    <script src="//code.jquery.com/jquery.min.js"></script>
+    <script>
+    $.get("Frontend/nav.html", function(data){
+        $("#nav-placeholder").replaceWith(data);
+    });
+    </script>
+    <body>
+        <div class="popup">
+            <button id="close">&times;</button>
+            <h2>Cookies</h2>
+            <p>This website does not use cookies.</p>
+        </div>
+        <script>
+            /*
+            window.addEventListener("load", function(){
+            setTimeout(
+                function open(event){
+                    document.querySelector(".popup").style.display = "block";
+                },
+                1000 
+            )
+            });
+            document.querySelector("#close").addEventListener("click", function(){
+            document.querySelector(".popup").style.display = "none";
+            });*/
+        </script>
+        <div id="main">
+            <div class="main-txt">
+                <h1><span>Education</span> is the key to Success<br></h1>
+                <h3>Making an Impact in Classrooms and Communities</h3>
+            </div>
+        </div>
+        <hr>
+        <p>
+            <div id="crs">
+                <span>Available Courses</span><br><br>
+                View All Available Courses<br>That We Offer<br><br>
+                <a href="http://localhost/CS244/Frontend/about.html"><button class="bn">Courses</button></a>
+            </div>
+            <div id="tch">
+                Teachers
+            </div>
+        </p>
+    </body>
+</html>
